@@ -25,8 +25,7 @@ Design a virtual network for cyber security students with DVWA and ELK stack dep
 The goal of this project is to create a virtual network for cyber security students to practice web vulnerabilities based on the cybersecurity founding principles of the CIA Triad: Confidentiality, Integrity and Availability. We will be using the NIST Management Framework: Prepare, Categorize, Select, Implement, Assess, Authorize, Monitor in our policies and procedures. 
 
 ![Triad Diagram](https://user-images.githubusercontent.com/88781846/142481603-43ca3728-3d68-4a73-b4cf-c87f734945f7.png)
-
-https://github.com/collette269/CyberSecurityProj1/blob/main/Diagrams/NIST%20RMF.PNG
+![NIST RMF.PNG](https://github.com/collette269/CyberSecurityProj1/blob/main/Diagrams/NIST%20RMF.PNG)
 
 Tools: 
 -	Microsoft Azure <https://portal.azure.com/>
