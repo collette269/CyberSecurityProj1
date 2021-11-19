@@ -184,6 +184,8 @@ touch /etc/ansible/filebeats.yml
 
 nano install-elk.yml
 
+<https://github.com/collette269/CyberSecurityProj1/blob/main/Ansible/Filebeat-playbook.yml.txt>
+
 To Run: ansible-playbook filebeats.yml
 
 Confirm by : http://ELKSTACKVM:5601/app/kibana
@@ -203,6 +205,8 @@ cd /etc/ansible
 touch /etc/ansible/metricbeats.yml
 
 nano install-elk.yml
+
+<https://github.com/collette269/CyberSecurityProj1/blob/main/Ansible/Metricbeat-playbook.yml.txt>
 
 To Run: ansible-playbook metricbeats.yml
 
