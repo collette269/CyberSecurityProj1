@@ -64,7 +64,7 @@ Web1	No	http access via port 80
 Web2	No	http access via port 80
 Elk Stack	No	Jumpbox via ssh & http port 5601, Kibana
 
-![Rules.PNG](https://github.com/collette269/CyberSecurityProj1/blob/main/Diagrams/Rules.PN)
+![Rules.PNG](https://github.com/collette269/CyberSecurityProj1/blob/main/Diagrams/Rules.PNG)
 
 ## Overview of Installation Process
 
@@ -92,7 +92,9 @@ sudo systemctl start docker
 Damn Vulnverable Web Application (DVWA) is an open sourced web application that is useful for cyber professionals, developers and students to practice web application security. 
 
 sudo systemctl start docker
+
 sudo docker pull cyberxsecurity/ubuntu:bionic
+
 sudo docker exec -ti bionic/ubuntu bash
 
 Run curl localhost/setup.php to test the connection
@@ -101,18 +103,28 @@ Run curl localhost/setup.php to test the connection
 Ansible is an open source tool that allows you to automate network configuration updates and maintenance. This human readable, agentless architecture uses OpenSSH and WinRM is very easy to manage and not easy to exploit. In this system, we used Ansible’s play-books to automate configuration of the ELK machine. Controls on administrative duties simplify the process, reduce errors, increase performance and standardize procedures. 
 
 sudo systemctl status docker
+
 sudo systemctl start docker
+
 sudo docker pull cyberxsecurity/ansible
+
 sudo docker exec -ti cyberxsecurity/ansible
 
 Ssh redadmin@jumbboxIP
+
 sudo docker container list -a
+
 sudo docker start _____________(container name)
+
 sudo docker exec -ti ___________(container name)   /bin/bash
+
 You should be in the container root user. 
+
 cd /etc/ansible
+
 nano hosts
   add >>> webservers IP address of web1 & web2 include “ansible_python_interpreter=/usr/bin/python3”
+
 nano ansible.cfg  
    change >>> remote_user = YOUR_USER_NAME
 
@@ -137,13 +149,21 @@ https://www.elastic.co/about/
 Elk Installation Tasks: 
 
 Ssh redadmin@jumbboxIP
+
 sudo docker container list -a
+
 sudo docker start _____________(ANSIBLE container name)
+
 sudo docker exec -ti ___________(ANSIBLE container name)   /bin/bash
+
 Now in the ANSIBLE container
+
 cd /etc/ansible
+
 touch /etc/ansible/install-elk.yml
+
 nano install-elk.yml
+
 To Run: ansible-playbook install-elk.yml
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
@@ -156,10 +176,15 @@ Filebeats will monitor WEB-1 & WEB2 Machines
 curl https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat > /etc/ansible/filebeat-config.yml
 
 In your ansible container:
+
 cd /etc/ansible
+
 touch /etc/ansible/filebeats.yml
+
 nano install-elk.yml
+
 To Run: ansible-playbook filebeats.yml
+
 Confirm by : http://ELKSTACKVM:5601/app/kibana
 
 ![ Filebeats Dashboard.PNG](https://github.com/collette269/CyberSecurityProj1/blob/main/Diagrams/Filebeats%20Dashboard.PNG)
@@ -171,10 +196,15 @@ Metricbeats will monitor WEB-1 & WEB2 Machines
 curl https://gist.githubusercontent.com/slape/58541585cc1886d2e26cd8be557ce04c/raw/0ce2c7e744c54513616966affb5e9d96f5e12f73/metricbeat > /etc/ansible/metricbeat-config.yml
 
 In your ansible container:
+
 cd /etc/ansible
+
 touch /etc/ansible/metricbeats.yml
+
 nano install-elk.yml
+
 To Run: ansible-playbook metricbeats.yml
+
 Confirm by : http://ELKSTACKVM:5601/app/kibana
 
 ![ Metricbeats Dashboard.PNG](https://github.com/collette269/CyberSecurityProj1/blob/main/Diagrams/Metricbeats%20Dashboard.PNG)
