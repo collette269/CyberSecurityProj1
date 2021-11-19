@@ -26,7 +26,7 @@ The goal of this project is to create a virtual network for cyber security stude
 
 ![Triad Diagram](https://user-images.githubusercontent.com/88781846/142481603-43ca3728-3d68-4a73-b4cf-c87f734945f7.png)
 
-![NIST RMF].(https://github.com/collette269/CyberSecurityProj1/blob/main/Diagrams/NIST%20RMF.PNG)
+![ NIST RMF.PNG](https://github.com/collette269/CyberSecurityProj1/blob/main/Diagrams/NIST%20RMF.PNG)
 
 Tools: 
 -	Microsoft Azure <https://portal.azure.com/>
