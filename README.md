@@ -143,7 +143,7 @@ What does Metricbeat record? Metricbeat collects data from operating systems and
 For more information about the company and their resources: 
 https://www.elastic.co/about/
 
-### Elk Installation and Configuration 
+### Elk Installation and Configuration
 
 Elk Installation Tasks: 
 
@@ -161,7 +161,9 @@ cd /etc/ansible
 
 touch /etc/ansible/install-elk.yml
 
-nano install-elk.yml
+nano install-elk.yml  
+
+<https://github.com/collette269/CyberSecurityProj1/blob/main/Ansible/Elk-Playbook.yml>
 
 To Run: ansible-playbook install-elk.yml
 
