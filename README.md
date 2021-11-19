@@ -26,7 +26,7 @@ The goal of this project is to create a virtual network for cyber security stude
 
 ![Triad Diagram](https://user-images.githubusercontent.com/88781846/142481603-43ca3728-3d68-4a73-b4cf-c87f734945f7.png)
 
-![ NIST RMF.PNG](https://github.com/collette269/CyberSecurityProj1/blob/main/Diagrams/NIST%20RMF.PNG)
+https://github.com/collette269/CyberSecurityProj1/blob/main/Diagrams/NIST%20RMF.PNG
 
 Tools: 
 -	Microsoft Azure <https://portal.azure.com/>
@@ -44,15 +44,14 @@ Web-1	Server	10.0.1.5	Linux(ubtntu 18.04)
 Web-2	Server	10.0.1.7	Linux(ubtntu 18.04)
 Elk-VM	Elk - Server	10.1.0.4	Linux(ubtntu 18.04)
 
-https://github.com/collette269/CyberSecurityProj1/blob/main/Diagrams/Virtual%20Network.PNG
+![ Virtual Network.PNG](https://github.com/collette269/CyberSecurityProj1/blob/main/Diagrams/Virtual%20Network.PNG)
 
 ### Description of the Topology
 
 This virtual network was created to expose a load-balancer and two virtual machine with instance of DVWA, the Damn Vulnerable Web Application. These virtual machines will be monitored with a separate virtual machine and the Kibana ELK Stack program. 
 
-Attached is a diagram of the Red Team Resource Group’s Topology.
-
-https://github.com/collette269/CyberSecurityProj1/blob/main/Diagrams/SHW13DIAGRAM.png
+![SHW13DIAGRAM.png](Attached is a diagram of the Red Team Resource Group’s Topology.
+https://github.com/collette269/CyberSecurityProj1/blob/main/Diagrams/SHW13DIAGRAM.png)
 
 ### Access Policies
 
@@ -65,7 +64,7 @@ Web1	No	http access via port 80
 Web2	No	http access via port 80
 Elk Stack	No	Jumpbox via ssh & http port 5601, Kibana
 
-https://github.com/collette269/CyberSecurityProj1/blob/main/Diagrams/Rules.PNG
+![Rules.PNG](https://github.com/collette269/CyberSecurityProj1/blob/main/Diagrams/Rules.PN)
 
 ## Overview of Installation Process
 
@@ -148,9 +147,7 @@ nano install-elk.yml
 To Run: ansible-playbook install-elk.yml
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-
-
-https://github.com/collette269/CyberSecurityProj1/blob/main/Diagrams/Elk%20Stack%20VM%20Docker%20PS.PNG
+! [Elk Stack VM Docker PS.PNG](https://github.com/collette269/CyberSecurityProj1/blob/main/Diagrams/Elk%20Stack%20VM%20Docker%20PS.PNG)
 
 ## Install Filebeats 
 
@@ -165,7 +162,7 @@ nano install-elk.yml
 To Run: ansible-playbook filebeats.yml
 Confirm by : http://ELKSTACKVM:5601/app/kibana
 
-https://github.com/collette269/CyberSecurityProj1/blob/main/Diagrams/Filebeats%20Dashboard.PNG
+![ Filebeats Dashboard.PNG](https://github.com/collette269/CyberSecurityProj1/blob/main/Diagrams/Filebeats%20Dashboard.PNG)
 
 ## Install Metricbeats 
 
@@ -180,6 +177,4 @@ nano install-elk.yml
 To Run: ansible-playbook metricbeats.yml
 Confirm by : http://ELKSTACKVM:5601/app/kibana
 
-https://github.com/collette269/CyberSecurityProj1/blob/main/Diagrams/Metricbeats%20Dashboard.PNG
-
-
+![ Metricbeats Dashboard.PNG](https://github.com/collette269/CyberSecurityProj1/blob/main/Diagrams/Metricbeats%20Dashboard.PNG)
