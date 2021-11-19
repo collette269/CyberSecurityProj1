@@ -50,8 +50,8 @@ Elk-VM	Elk - Server	10.1.0.4	Linux(ubtntu 18.04)
 
 This virtual network was created to expose a load-balancer and two virtual machine with instance of DVWA, the Damn Vulnerable Web Application. These virtual machines will be monitored with a separate virtual machine and the Kibana ELK Stack program. 
 
-![SHW13DIAGRAM.png](Attached is a diagram of the Red Team Resource Group’s Topology.
-https://github.com/collette269/CyberSecurityProj1/blob/main/Diagrams/SHW13DIAGRAM.png)
+Attached is a diagram of the Red Team Resource Group’s Topology.
+![SHW13DIAGRAM.png](https://github.com/collette269/CyberSecurityProj1/blob/main/Diagrams/SHW13DIAGRAM.png)
 
 ### Access Policies
 
@@ -167,7 +167,7 @@ nano install-elk.yml
 To Run: ansible-playbook install-elk.yml
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-! [Elk Stack VM Docker PS.PNG](https://github.com/collette269/CyberSecurityProj1/blob/main/Diagrams/Elk%20Stack%20VM%20Docker%20PS.PNG)
+![Elk Stack VM Docker PS.PNG](https://github.com/collette269/CyberSecurityProj1/blob/main/Diagrams/Elk%20Stack%20VM%20Docker%20PS.PNG)
 
 ## Install Filebeats 
 
